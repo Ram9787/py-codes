@@ -11,3 +11,23 @@ for i in range(len(l)):
 # 1st element will smallest,next smallest
     
 print(l)
+
+#------------------------------------------
+#selection sort when list is in ascending order
+l=[5,3,8,5,1,9,4]
+n=len(l)
+f=0
+c=0
+for i in range(n):
+    for j in range(i+1,n):
+        c+=1
+        if(l[i]>l[j]):
+            l[i],l[j]=l[j],l[i]
+            #c+=1
+        if(l[j]<l[j-1]):
+            f=1
+            
+    if(f==0):
+        break
+    
+print(l,c)
